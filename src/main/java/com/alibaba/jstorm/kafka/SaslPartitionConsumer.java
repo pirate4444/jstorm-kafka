@@ -197,7 +197,7 @@ public class SaslPartitionConsumer implements IPartitionConsumer{
 					return;
 				}
 				this.emittingOffset = latestOffset;
-				msgs = poll(100, emittingOffset + 1);
+				msgs = poll(0, emittingOffset + 1);
 				if (msgs == null) {
 					if (LOG.isWarnEnabled()) {
 						LOG.warn("also fetch null message from offset {}", emittingOffset);
