@@ -6,5 +6,3 @@ Kafka增加了SASL认证，消费端也要做相应的调整。阿里官方jstor
 ## 使用方式
 
 参考代码中的KafkaSpoutTest.java类
-
-大家一起交流、学习。
